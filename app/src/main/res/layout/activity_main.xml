@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The layout tag for Data Binding -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Root LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kabaddi Kounter"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp"
+            android:background="#3F51B5"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Team A components -->
+        <TextView
+            android:id="@+id/teamATextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Horizontal LinearLayout for Team A buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Button for +1 for Team A -->
+            <Button
+                android:id="@+id/teamAPlusOneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Button for +2 for Team A -->
+            <Button
+                android:id="@+id/teamAPlusTwoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Button for +3 for Team A -->
+            <Button
+                android:id="@+id/teamAPlusThreeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!-- EditText for Team A score -->
+        <EditText
+            android:id="@+id/teamAScoreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter score for Team A"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Team B components -->
+        <TextView
+            android:id="@+id/teamBTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Horizontal LinearLayout for Team B buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Button for +1 for Team B -->
+            <Button
+                android:id="@+id/teamBPlusOneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Button for +2 for Team B -->
+            <Button
+                android:id="@+id/teamBPlusTwoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Button for +3 for Team B -->
+            <Button
+                android:id="@+id/teamBPlusThreeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <!-- EditText for Team B score -->
+        <EditText
+            android:id="@+id/teamBScoreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter score for Team B"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Reset button -->
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</layout>
